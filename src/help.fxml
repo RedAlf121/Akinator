@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="599.0" styleClass="fondo" stylesheets="@inicioJuego.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="496.0" styleClass="fondoPregunta">
+         <children>
+            <TextArea editable="false" prefHeight="83.0" prefWidth="513.0" stylesheets="@juego.css" text="Para enseñarle a CUJINATOR a memorizar un personaje se escribe directamente el nombre y la diferencia. Ejemplo:" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </TextArea>
+            <TextField fx:id="characterText" editable="false" prefHeight="30.0" prefWidth="384.0" styleClass="text-field" text="Michael Jackson">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="differenceText" editable="false" prefHeight="30.0" prefWidth="384.0" styleClass="text-field" text="Es cantante">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

@@ -1,0 +1,53 @@
+.button {
+  -fx-background-color: transparent;
+  -fx-font-size: 28px;
+  -fx-text-fill: black;
+  -fx-font-family: Ravie;
+}
+
+.button:hover {
+ 
+  -fx-text-fill: white;
+  -fx-scale-x: 1.2px;
+  -fx-scale-y: 1.2px;
+}
+
+
+
+.fondo{
+  -fx-background-color: linear-gradient(to bottom, #00CED1,#0055b6); 
+}
+
+.message{
+  -fx-scale-z: 1;
+  -fx-text-fill: black;
+  -fx-font-size: 53px;
+  -fx-font-family: Ravie;
+}
+
+.normal-message{
+  -fx-font-size: 20px;
+  -fx-font-family: Ravie;   
+  -fx-border-radius: 20px;
+}
+
+.error-message{
+  -fx-text-fill: red;
+  -fx-background-color: red;
+  -fx-font-size: 20px;
+  -fx-font-family: Ravie; 
+}
+.text-field{  
+  -fx-background-radius: 200px;
+  -fx-font-size: 16px;
+  -fx-font-family: Ravie; 
+}
+
+.fondoPregunta{
+  -fx-background-color: #f7ff82;
+  -fx-background-radius: 20px;
+}
+
+.fondoTitulo{
+  -fx-background-color: linear-gradient(to bottom, #00CED1,#0055b6);    
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="468.0" styleClass="fondo" stylesheets="@inicioJuego.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JuegoController">
+   <children>
+      <ImageView fitHeight="388.0" fitWidth="560.0" layoutX="106.0" layoutY="-52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/globodialogo-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="400.0" prefWidth="468.0" stylesheets="@juego.css">
+         <children>
+            <TextArea fx:id="textArea" editable="false" layoutX="196.0" layoutY="26.0" prefHeight="161.0" prefWidth="215.0" styleClass="text-area" text="Piensa en un personaje. Yo voy a intentar adivinarlo. ¿Estás listo?" wrapText="true" />
+            <Button fx:id="backButton" layoutX="5.0" layoutY="11.0" mnemonicParsing="false" onAction="#irAtras" />
+            <ImageView fitHeight="46.0" fitWidth="34.0" layoutX="19.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/boton%20atras%202.png" />
+               </image>
+            </ImageView>
+            <ProgressIndicator fx:id="ready" layoutX="14.0" layoutY="96.0" prefHeight="54.0" prefWidth="143.0" progress="0.0" styleClass="barraProgreso" stylesheets="@juego.css" />
+         </children>
+      </Pane>
+      <VBox alignment="BOTTOM_LEFT" layoutX="300.0" layoutY="223.0" prefHeight="177.0" prefWidth="117.0">
+         <children>
+            <Button fx:id="yesButton" mnemonicParsing="false" onAction="#casoSi" text="SI" />
+            <Button fx:id="noButton" mnemonicParsing="false" onAction="#casoNo" prefWidth="84.0" text="NO" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="233.0" fitWidth="248.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/OIG-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
